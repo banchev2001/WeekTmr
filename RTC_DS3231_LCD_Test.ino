@@ -6,6 +6,7 @@ DS3231 Library Document Web: http://www.rinkydinkelectronics.com/library.php?id=
 
 Author: Stoian Banchev
 Web: https://github.com/banchev2001/WeekTmr
+Is based on Siemens Logo conception for Week timer function.
 */
 /*Coment for Git Hub*/
 
