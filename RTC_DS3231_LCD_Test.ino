@@ -58,7 +58,7 @@ Is based on Siemens Logo conception for Week timer function.
                                             TMR2_L3} DisplayPage = MAIN_DISP;
   
   /********************************************************************/
-
+  void StartDisplay(void);
   void TmrUpBut(uint8_t Timer, uint8_t TimerLyer); //Control Prssing up button on timer display page
   void TmrDowBut(uint8_t Timer, uint8_t TimerLyer);//Control Prssing down button on timer display page
   void WeekT_Display(uint8_t Timer, uint8_t TimerLyer); //Show Timer layer display 
@@ -122,11 +122,7 @@ void setup() {
   dsTime.begin(); // Initialize the dsTime object
   lcd.begin(20,4); // Initializes the interface to the LCD screen, and specifies the dimensions (width and height) of the display } 
 
-  // Aproximate 8 seconds to upload scatch
-  // The following lines can be uncommented to set the date and time
-  //dsTime.setDOW(SUNDAY);     // Set Day-of-Week to SUNDAY
-  //dsTime.setTime(20, 4, 0);     // Set the time to 12:00:00 (24hr format)
-  //dsTime.setDate(29, 8, 2020);   // Set the date to January 1st, 2014
+  StartDisplay(); //Show start display
 
 }
 
@@ -578,7 +574,23 @@ void WeekT_Display(uint8_t Timer, uint8_t TimerLyer){
   lcd.print(WT[Timer-1][TimerLyer-1].OffMinutes, DEC);
   
 }
-void MainDisplay(){
+
+void StartDisplay(void){
+  lcd.clear();
+  lcd.setCursor(0,1);
+  lcd.print("Source:");
+  lcd.setCursor(0,2);
+  lcd.print("http://github.com");
+  lcd.setCursor(0,3);
+  lcd.print("banchev2001/WeekTmr");
+  lcd.setCursor(0,0);
+  lcd.print("BanchoLab 2020");
+
+
+  delay(4500);
+  lcd.clear();
+}
+void MainDisplay(void){
 
    if (CursPlace == Home) arduTime = dsTime.getTime();
    
