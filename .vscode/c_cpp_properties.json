@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceRoot}",
+                "E:\\ARDUINO\\**",
+                "C:\\Program Files (x86)\\Arduino\\**",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\include",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\mega"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": false,
+                "path": [
+               
+                    "${workspaceRoot}",
+                    "E:\\ARDUINO\\**",
+                    "C:\\Program Files (x86)\\Arduino\\**",
+                    "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
+                    "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\include",
+                    "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\mega"
+                ]
+            },
+         
+            "intelliSenseMode": "msvc-x64"
+            //"compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+            //"cStandard": "gnu18",
+            //"cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}

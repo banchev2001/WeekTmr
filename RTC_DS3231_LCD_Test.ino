@@ -15,7 +15,7 @@ Is based on Siemens Logo conception for Week timer function.
 * www.HowToMechatronics.com
 * DS3231 Library made by Henning Karlsen which can be found and downloaded from his website, www.rinkydinkelectronics.com.
 */
-//#include <Arduino.h>
+#include <Arduino.h>
 #include <DS3231.h>
 #include <LiquidCrystal.h> // includes the LiquidCrystal Library 
 #include <WeekTimer.h> //My custom library for week timer functions
@@ -52,10 +52,10 @@ Is based on Siemens Logo conception for Week timer function.
   enum CursAddr {Home = 0, HOUR_ADR, MINUTES_ADR, SECONDS_ADR, 
                  DAY_ADR, MONTH_ADR, YEAR_ADR, DOW_ADR, MON_ADR,
                  TUE_ADR, WED_ADR, THU_ADR, FRI_ADR, SAT_ADR, SUN_ADR,
-                 ONH_ADR, ONM_ADR, OFFH_ADR, OFFM_ADR} CursPlace = Home;
+                 ONH_ADR, ONM_ADR, OFFH_ADR, OFFM_ADR} CursPlace ;
   //               
   enum Display {MAIN_DISP = 0, TMR1_L1, TMR1_L2, TMR1_L3, TMR2_L1, TMR2_L2, 
-                                            TMR2_L3} DisplayPage = MAIN_DISP;
+                                            TMR2_L3} DisplayPage ;
   
   /********************************************************************/
   void StartDisplay(void);
@@ -107,6 +107,7 @@ void setup() {
 
    
   CursPlace = Home; //Set Cursor in home position
+  DisplayPage = MAIN_DISP; //Set display to home
   
   /*****Config Pins and define custom names of pins *****/
   //Inputs
@@ -134,7 +135,7 @@ void loop() {
     if (!digitalRead(SELECT_BUTTON)){
 
       if(DisplayPage == MAIN_DISP){ 
-          CursPlace = CursPlace + 1; //Here read more about cast operator
+          CursPlace = static_cast<CursAddr>(CursPlace + 1); //Here read more about cast operator
           while(!digitalRead(SELECT_BUTTON));
            
             if(CursPlace > DOW_ADR){ //Write all arduTime Data and send it to DS3231
@@ -147,7 +148,7 @@ void loop() {
       
       else{ 
           if(CursPlace < DOW_ADR) CursPlace = DOW_ADR;
-          CursPlace = CursPlace + 1;
+          CursPlace = static_cast<CursAddr>(CursPlace + 1); 
           
           while(!digitalRead(SELECT_BUTTON));
             
@@ -193,7 +194,7 @@ void loop() {
 
       if(CursPlace == Home){
         if(DisplayPage == MAIN_DISP) DisplayPage = TMR2_L3;
-        else DisplayPage = DisplayPage - 1;
+        else DisplayPage = static_cast<Display>(DisplayPage - 1);
         lcd.clear();
         
       }
@@ -276,7 +277,7 @@ void loop() {
   if (!digitalRead(DOWN_BUTTON)){
      
      if(CursPlace == Home){
-        DisplayPage = DisplayPage + 1;  
+        DisplayPage = static_cast<Display>(DisplayPage + 1);  
         if(DisplayPage > TMR2_L3) DisplayPage = MAIN_DISP;
         lcd.clear();
       }

@@ -1,0 +1,12 @@
+{
+    "programmer": "ArduinoISP",
+    "board": "arduino:avr:nano",
+    "configuration": "cpu=atmega328old",
+    "sketch": "RTC_DS3231_LCD_Test\\RTC_DS3231_LCD_Test.ino",
+    "arduino.path": "C:\\Program Files (x86)\\Arduino",
+    "arduino.additionalUrls": "",
+    "arduino.logLevel": "info",
+    "arduino.enableUSBDetection": true,
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "port":"COM3"
+}
