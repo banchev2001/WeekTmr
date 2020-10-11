@@ -1,0 +1,40 @@
+########################################################
+# KEYWORDS FILE FOR WeekTimer.h Library				   #
+########################################################
+
+
+#CLASS KEYWORDS
+#=======================================================
+#MON_BIT	LITERAL1
+#TUE_BIT	LITERAL1
+#WED_BIT	LITERAL1
+#THU_BIT	LITERAL1
+#FRI_BIT	LITERAL1
+#SAT_BIT	LITERAL1
+#SUN_BIT	LITERAL1
+
+#=======================================================
+
+#CLASS KEYWORDS
+#=======================================================
+WeekTimer	KEYWORD1
+#=======================================================
+
+#VARIABLE AND METHODS KEYWORDS
+#=======================================================
+WeekPlan	KEYWORD2
+OnHour	KEYWORD2
+OnMinutes	KEYWORD2
+OffHour	KEYWORD2
+OffMinutes	KEYWORD2
+
+EnableWD	KEYWORD2
+DisableWD	KEYWORD2
+SetWeekPlanStr	KEYWORD2
+GetWeekPlanStr	KEYWORD2
+Check	KEYWORD2
+SetOnTime	KEYWORD2
+SetOffTime	KEYWORD2
+ValOnTime	KEYWORD2
+ValOffTime	KEYWORD2
+#=======================================================
