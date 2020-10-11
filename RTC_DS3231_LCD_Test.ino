@@ -5,7 +5,7 @@ Source Web: https://howtomechatronics.com/tutorials/arduino/arduino-ds3231-real-
 DS3231 Library Document Web: http://www.rinkydinkelectronics.com/library.php?id=73
 
 Author: Stoian Banchev
-Web: https://github.com/banchev2001/Arduino_Timer_DS3231
+Web: https://github.com/banchev2001/WeekTmr
 */
 /*Coment for Git Hub*/
 
