@@ -69,7 +69,7 @@ Is based on Siemens Logo conception for Week timer function.
 
 void setup() { 
 
-      /************************Initial Timers**********************/
+  /************************Initial Timers**********************/
     #ifdef FIRST_INI //Part of code for first initialisation of timers
                     //If not difained is not executed 
       
@@ -98,7 +98,7 @@ void setup() {
       WT[1][2].SetOffTime(22,30);
     //Write all settings to EEPROM
     SaveTimer(1,1); SaveTimer(1,2); SaveTimer(1,3); SaveTimer(2,1); SaveTimer(2,2); SaveTimer(2,3);
-     #endif
+    #endif
      
     //Loading all Settings from EEPROM    
     LoadTimer(1,1); LoadTimer(1,2); LoadTimer(1,3); LoadTimer(2,1); LoadTimer(2,2); LoadTimer(2,3);
@@ -354,13 +354,11 @@ void loop() {
   
       
        //Turn Off curssor when rotate all parameters
-       if(CursPlace == Home){
+        if(CursPlace == Home){
         lcd.noBlink();
         if (DisplayPage == MAIN_DISP) MainDisplay(); //Update Main display  
-
-  
        }
-       else{
+        else{
         lcd.blink();
        }
        
@@ -575,7 +573,6 @@ void WeekT_Display(uint8_t Timer, uint8_t TimerLyer){
   lcd.print(WT[Timer-1][TimerLyer-1].OffMinutes, DEC);
   
 }
-
 void StartDisplay(void){
   lcd.clear();
   lcd.setCursor(0,1);
