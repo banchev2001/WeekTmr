@@ -4,7 +4,8 @@
  * DS3231_Library_Documentation.pdf - Library documentation by Henning Karlsen
  * RTC_DS3231_LCD_Test.ino - Main source code of the project - using Arduino IDE
  * /libraries/DS3231 contain Henning Karlsen free library with examples
- * /libraries/WeekTimerLibrary/ contain Stoian Banchev library for WeekTimer object 
+ * /libraries/WeekTimerLibrary/ contain Stoian Banchev library for WeekTimer object
+ * /Board/WeekTmr contain cidKad project of the board and schematic 
  
  Board: Arduino nano
  
