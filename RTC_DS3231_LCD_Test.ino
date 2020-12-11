@@ -580,7 +580,7 @@ void StartDisplay(void){
   lcd.setCursor(0,2);
   lcd.print("http://github.com");
   lcd.setCursor(0,3);
-  lcd.print("banchev2001/WeekTmr");
+  lcd.print("sbch01/WeekTmr");
   lcd.setCursor(0,0);
   lcd.print("BanchoLab 2020");
 
