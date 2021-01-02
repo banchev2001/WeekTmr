@@ -105,6 +105,13 @@ void setup() {
     
   /********************** EOF Initial Timers ******************/
 
+  /********************** Custom Charter **********************/
+  //Here is creating custom charter for FrancTex logo
+
+ 
+  
+
+  /************************************************************/
    
   CursPlace = Home; //Set Cursor in home position
   DisplayPage = MAIN_DISP; //Set display to home
@@ -574,6 +581,90 @@ void WeekT_Display(uint8_t Timer, uint8_t TimerLyer){
   
 }
 void StartDisplay(void){
+  
+  
+byte FT_LT_Char[] = {
+  B11111,
+  B11111,
+  B00001,
+  B00001,
+  B00111,
+  B01001,
+  B11001,
+  B11001
+  };  
+byte FT_RT_Char [] = {
+  B11111,
+  B11111,
+  B10000,
+  B10000,
+  B11100,
+  B10010,
+  B10011,
+  B10011
+};
+byte FT_RB_Char[] = {
+  B10011,
+  B10011,
+  B10010,
+  B11100,
+  B10000,
+  B10000,
+  B10000,
+  B10000
+};
+byte FT_LB_Char[] = {
+  B11001,
+  B11001,
+  B01001,
+  B00111,
+  B00001,
+  B00001,
+  B00001,
+  B00001
+};
+byte Cyr_n_char[] = {
+  B00000,
+  B00000,
+  B10001,
+  B10001,
+  B11111,
+  B10001,
+  B10001,
+  B00000
+};
+byte Cyr_c_char[] = {
+  B00000,
+  B00000,
+  B10010,
+  B10010,
+  B10010,
+  B10010,
+  B11111,
+  B00001
+};
+  
+  lcd.createChar(1, FT_LT_Char);
+  lcd.createChar(2, FT_RT_Char);
+  lcd.createChar(3, FT_LB_Char);
+  lcd.createChar(4, FT_RB_Char);
+  lcd.createChar(5, Cyr_n_char);
+  lcd.createChar(6, Cyr_c_char);
+  lcd.clear();
+  lcd.home();
+  lcd.setCursor(7,1);
+  lcd.write (1);
+  lcd.write (2);
+  lcd.print("ex");
+  lcd.setCursor(7,2);
+  lcd.write (3);
+  lcd.write (4);
+  lcd.print("pa");
+  lcd.write(5);
+  lcd.write(6);
+  delay(4500);
+  
+  
   lcd.clear();
   lcd.setCursor(0,1);
   lcd.print("Source:");
@@ -582,10 +673,10 @@ void StartDisplay(void){
   lcd.setCursor(0,3);
   lcd.print("sbch01/WeekTmr");
   lcd.setCursor(0,0);
-  lcd.print("BanchoLab 2020");
-
-
+  lcd.print("FrancTeh 2020");
   delay(4500);
+
+  
   lcd.clear();
 }
 void MainDisplay(void){
