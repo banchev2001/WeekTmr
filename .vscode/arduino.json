@@ -8,5 +8,5 @@
     "arduino.logLevel": "info",
     "arduino.enableUSBDetection": true,
     "C_Cpp.intelliSenseEngine": "Tag Parser",
-    "port":"COM3"
+    "port":"COM4"
 }
