@@ -401,7 +401,7 @@ U 1 1 5F96DD68
 P 7800 5050
 F 0 "R1" V 7593 5050 50  0000 C CNN
 F 1 "R330" V 7684 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 5050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 7730 5050 50  0001 C CNN
 F 3 "~" H 7800 5050 50  0001 C CNN
 	1    7800 5050
 	0    1    1    0   
@@ -465,7 +465,7 @@ U 1 1 5F96E4A5
 P 9500 5050
 F 0 "R2" V 9293 5050 50  0000 C CNN
 F 1 "R330" V 9384 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9430 5050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 9430 5050 50  0001 C CNN
 F 3 "~" H 9500 5050 50  0001 C CNN
 	1    9500 5050
 	0    1    1    0   
@@ -731,7 +731,7 @@ U 1 1 5F9BA558
 P 9450 1200
 F 0 "J21" H 9368 875 50  0000 C CNN
 F 1 "TMR2.1" H 9368 966 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 9450 1200 50  0001 C CNN
+F 2 "KiCad_Library:COMET_2EDGR-5.08-14-00AH" H 9450 1200 50  0001 C CNN
 F 3 "~" H 9450 1200 50  0001 C CNN
 	1    9450 1200
 	-1   0    0    1   
@@ -742,7 +742,7 @@ U 1 1 5F9BB09D
 P 9450 1750
 F 0 "J22" H 9368 1425 50  0000 C CNN
 F 1 "TMR2.2" H 9368 1516 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 9450 1750 50  0001 C CNN
+F 2 "KiCad_Library:COMET_2EDGR-5.08-14-00AH" H 9450 1750 50  0001 C CNN
 F 3 "~" H 9450 1750 50  0001 C CNN
 	1    9450 1750
 	-1   0    0    1   
@@ -753,7 +753,7 @@ U 1 1 5F9BBFA3
 P 8050 1200
 F 0 "J11" H 7968 875 50  0000 C CNN
 F 1 "TMR1.1" H 7968 966 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 8050 1200 50  0001 C CNN
+F 2 "KiCad_Library:COMET_2EDGR-5.08-14-00AH" H 8050 1200 50  0001 C CNN
 F 3 "~" H 8050 1200 50  0001 C CNN
 	1    8050 1200
 	-1   0    0    1   
@@ -764,7 +764,7 @@ U 1 1 5F9BCE98
 P 8050 1750
 F 0 "J12" H 7968 1425 50  0000 C CNN
 F 1 "TMR1.2" H 7968 1516 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 8050 1750 50  0001 C CNN
+F 2 "KiCad_Library:COMET_2EDGR-5.08-14-00AH" H 8050 1750 50  0001 C CNN
 F 3 "~" H 8050 1750 50  0001 C CNN
 	1    8050 1750
 	-1   0    0    1   
@@ -801,46 +801,30 @@ Text GLabel 9800 1200 2    50   Input ~ 0
 COM2.1
 Text GLabel 9800 1750 2    50   Input ~ 0
 COM2.2
-Text GLabel 8400 1100 2    50   Input ~ 0
-NO1.1
 Text GLabel 8400 1300 2    50   Input ~ 0
+NO1.1
+Text GLabel 8400 1100 2    50   Input ~ 0
 NC1.1
 Wire Wire Line
-	8250 1300 8400 1300
-Wire Wire Line
 	8250 1200 8400 1200
-Wire Wire Line
-	8250 1100 8400 1100
-Text GLabel 8400 1850 2    50   Input ~ 0
-NO1.2
 Text GLabel 8400 1650 2    50   Input ~ 0
+NO1.2
+Text GLabel 8400 1850 2    50   Input ~ 0
 NC1.2
-Text GLabel 9800 1100 2    50   Input ~ 0
-NO2.1
 Text GLabel 9800 1300 2    50   Input ~ 0
+NO2.1
+Text GLabel 9800 1100 2    50   Input ~ 0
 NC2.1
 Wire Wire Line
-	9650 1100 9800 1100
-Wire Wire Line
 	9650 1200 9800 1200
-Wire Wire Line
-	9650 1300 9800 1300
-Text GLabel 9800 1850 2    50   Input ~ 0
-NO2.2
 Text GLabel 9800 1650 2    50   Input ~ 0
+NO2.2
+Text GLabel 9800 1850 2    50   Input ~ 0
 NC2.2
-Wire Wire Line
-	9650 1650 9800 1650
 Wire Wire Line
 	9650 1750 9800 1750
 Wire Wire Line
-	9650 1850 9800 1850
-Wire Wire Line
-	8250 1650 8400 1650
-Wire Wire Line
 	8250 1750 8400 1750
-Wire Wire Line
-	8250 1850 8400 1850
 $Comp
 L Diode:1N5819 D2
 U 1 1 5F96FCC2
@@ -880,4 +864,20 @@ Wire Wire Line
 Connection ~ 10100 4250
 Wire Wire Line
 	10100 4250 10100 4600
+Wire Wire Line
+	8250 1100 8400 1100
+Wire Wire Line
+	8250 1300 8400 1300
+Wire Wire Line
+	8250 1650 8400 1650
+Wire Wire Line
+	8250 1850 8400 1850
+Wire Wire Line
+	9650 1100 9800 1100
+Wire Wire Line
+	9650 1300 9800 1300
+Wire Wire Line
+	9650 1650 9800 1650
+Wire Wire Line
+	9650 1850 9800 1850
 $EndSCHEMATC

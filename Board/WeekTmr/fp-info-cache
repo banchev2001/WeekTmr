@@ -1,4 +1,4 @@
-16949073053928011
+16952286823510374
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50267,9 +50267,23 @@ solder jumper open
 5
 3
 KiCad_Library
+Arduino_Nano_direct_Slot
+Arduino Nano, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf
+Arduino Nano
+0
+30
+30
+KiCad_Library
 BarrelJack_Horizontal_comet
 DC Barrel Jack
 Power Jack
+0
+3
+3
+KiCad_Library
+COMET_2EDGR-5.08-14-00AH
+
+
 0
 3
 3
